@@ -12,6 +12,7 @@
 * [Руководство по установке и настройке](rukovodstvo-po-ustanovke-i-nastroike/README.md)
   * [Включение аппаратной виртуализации](rukovodstvo-po-ustanovke-i-nastroike/vklyuchenie-apparatnoi-virtualizacii.md)
   * [Установка VirtualBox](rukovodstvo-po-ustanovke-i-nastroike/ustanovka-virtualbox.md)
+  * [Установка Vagrant](rukovodstvo-po-ustanovke-i-nastroike/ustanovka-vagrant.md)
   * [Создание виртуальной машины](rukovodstvo-po-ustanovke-i-nastroike/untitled-1.md)
   * [Настройка виртуальной машины](rukovodstvo-po-ustanovke-i-nastroike/untitled.md)
   * [Установка ОС Debian 10.6.0](rukovodstvo-po-ustanovke-i-nastroike/ustanovka-os-debian-10.6.0.md)
