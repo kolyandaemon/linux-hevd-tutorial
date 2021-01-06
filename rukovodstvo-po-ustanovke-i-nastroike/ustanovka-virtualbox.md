@@ -10,6 +10,8 @@
 
 ## Установка VirtualBox
 
+### Windows 10
+
 Запустив файл откроется окно установочной программы VirtualBox как показано на рисунке 3.
 
 ![ &#x420;&#x438;&#x441;&#x443;&#x43D;&#x43E;&#x43A; 3 &#x2014; &#x41E;&#x43A;&#x43D;&#x43E; &#x443;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43E;&#x447;&#x43D;&#x43E;&#x439; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x44B; VirtualBox](../.gitbook/assets/1-okno-.png)
@@ -31,4 +33,42 @@
 ![&#x420;&#x438;&#x441;&#x443;&#x43D;&#x43E;&#x43A; 7 &#x2014; &#x41E;&#x43A;&#x43D;&#x43E; &#x437;&#x430;&#x432;&#x435;&#x440;&#x448;&#x435;&#x43D;&#x438;&#x44F; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x44B; &#x443;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43A;&#x438; VirtualBox](../.gitbook/assets/7-okno.png)
 
 Для закрытия программы установки VirtualBox нужно нажать на кнопку "Finish". Программа VirtualBox запустится сразу после нажатия кнопки "Finish" если напротив пункта "Start Oracle VM VirtualBox 6.1.16 after installation" будет стоять галочка.
+
+### Debian 10.6
+
+В первую очередь необходимо обновить индексы репозитория операционной системы с помощь команды приведенной ниже:
+
+```text
+sudo apt update
+```
+
+Далее необходимо импортировать ключ GPG для репозитория VirtualBox
+
+```text
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+```
+
+В случае успешного выполнения команда выше вернёт значение "**ОК**".
+
+После необходимо добавить репозиторий VirtualBox в список источников. 
+
+```text
+echo "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bionic contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+```
+
+После выполнения команды выше необходимо обновить индексы репозитория системы
+
+```text
+sudo apt update
+```
+
+Последняя команда позволит установить сам VirtualBox
+
+```text
+sudo apt install virtualbox-6.0
+```
+
+{% hint style="info" %}
+На момент написания практикума Vagrant не умеет работать с версией VitrualBox  6.1 и выше
+{% endhint %}
 
