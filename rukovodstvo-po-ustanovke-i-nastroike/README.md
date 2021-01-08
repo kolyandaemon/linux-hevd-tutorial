@@ -8,7 +8,7 @@
 * Windwos 10 \(WSL2\)
 * Debain 10
 
-### Windwos 10 \(CMD\)
+## Windwos 10 \(CMD\)
 
 
 
