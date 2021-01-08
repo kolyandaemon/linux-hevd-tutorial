@@ -16,7 +16,6 @@
   * [Создание виртуальной машины](rukovodstvo-po-ustanovke-i-nastroike/untitled-1.md)
   * [Настройка виртуальной машины](rukovodstvo-po-ustanovke-i-nastroike/untitled.md)
   * [Установка ОС Debian 10.6.0](rukovodstvo-po-ustanovke-i-nastroike/ustanovka-os-debian-10.6.0.md)
-  * [Настройка ОС Debian 10.6.0](rukovodstvo-po-ustanovke-i-nastroike/nastroika-os-debian-10.6.0.md)
 
 ## Лабораторная работа №0
 

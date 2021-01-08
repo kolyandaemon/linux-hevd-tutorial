@@ -8,7 +8,19 @@
 * Windwos 10 \(WSL2\)
 * Debain 10
 
-## Windwos 10 \(CMD\)
+## Windows 10 \(CMD\)
+
+В данном варианте лабораторного стенда достаточно установить и настроить программное обеспечение Vagrant и VirtualBox. Все манипуляции с Vagrant осуществляются с помощью интерпретатора командной строки CMD или по другому именуемой "Командная строки".
+
+{% page-ref page="ustanovka-virtualbox.md" %}
+
+{% page-ref page="ustanovka-vagrant.md" %}
 
 
+
+
+
+## Windows 10 \(WSL2\)
+
+## Debain 10
 
