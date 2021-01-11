@@ -32,6 +32,8 @@
 
 {% page-ref page="vklyuchenie-apparatnoi-virtualizacii.md" %}
 
+{% page-ref page="ustanovka-os-debian-10.6.0.md" %}
+
 {% page-ref page="ustanovka-virtualbox.md" %}
 
 {% page-ref page="ustanovka-vagrant.md" %}

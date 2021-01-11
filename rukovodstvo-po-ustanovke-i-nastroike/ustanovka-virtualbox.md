@@ -6,7 +6,7 @@
 
 ![ &#x420;&#x438;&#x441;&#x443;&#x43D;&#x43E;&#x43A; 2 &#x2014; &#x421;&#x442;&#x440;&#x430;&#x43D;&#x438;&#x446;&#x430; &#x437;&#x430;&#x433;&#x440;&#x443;&#x437;&#x43A;&#x438; &#x443;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43E;&#x447;&#x43D;&#x44B;&#x445; &#x444;&#x430;&#x439;&#x43B;&#x43E;&#x432; VirtualBox](../.gitbook/assets/skachivane-virtualbox.png)
 
-Скачать установочный пакет для операционной системы Windows 10 можно перейдя по ссылке [Windows hosts](https://download.virtualbox.org/virtualbox/6.1.16/VirtualBox-6.1.16-140961-Win.exe).
+Скачать установочный пакет для операционной системы Windows 10 можно перейдя по ссылке: [Windows hosts](https://download.virtualbox.org/virtualbox/6.1.16/VirtualBox-6.1.16-140961-Win.exe).
 
 ## Установка VirtualBox
 
