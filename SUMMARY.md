@@ -16,12 +16,12 @@
   * [Установка Vagrant](rukovodstvo-po-ustanovke-i-nastroike/ustanovka-vagrant.md)
   * [Установка ОС Debian 10.6.0](rukovodstvo-po-ustanovke-i-nastroike/ustanovka-os-debian-10.6.0.md)
 
-## Лабораторная работа №0
+## Лабораторная работа №1
 
-* [Краткое описание](laboratornaya-rabota-0/kratkoe-opisanie.md)
-* [Справочная информация](laboratornaya-rabota-0/spravochnaya-informaciya.md)
-* [Список рекомендуемых информационных источников](laboratornaya-rabota-0/spisok-rekomenduemoi-literatury.md)
-* [Задание](laboratornaya-rabota-0/zadanie.md)
+* [Buffer Overflow Stack](laboratornaya-rabota-1/buffer-overflow-stack/README.md)
+  * [Справочная информация](laboratornaya-rabota-1/buffer-overflow-stack/spravochnaya-informaciya.md)
+  * [Список рекомендуемых информационных источников](laboratornaya-rabota-1/buffer-overflow-stack/spisok-rekomenduemoi-literatury.md)
+  * [Задание](laboratornaya-rabota-1/buffer-overflow-stack/zadanie.md)
 
 ---
 
