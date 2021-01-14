@@ -1,25 +1,100 @@
 # Задание
 
-## Getting Super Powers
+## Запуск виртуальной среды
 
-Becoming a super hero is a fairly straight forward process:
+Создайте папку в домашней директории с именем "kernel\_build":
 
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-{% code title="hello.sh" %}
 ```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
+$ mkdir kernel_build
 ```
-{% endcode %}
+
+Скачать нужный образ виртуальной машины можно с помощью следующей команды:
+
+```bash
+$ vagrant init centos/7
+```
+
+ Запуск виртуальной машины осуществляется следующей командой:
+
+```bash
+$ vagrant up
+```
+
+Для того чтобы подключиться к терминалу запущенной машины достаточно выполнить в терминале команду ниже:
+
+```bash
+$ vagrant ssh
+```
+
+## Установка необходимых пакетов 
+
+В начале необходимо обновить репозитории пакетов программного обеспечения:
+
+```bash
+$ yum update
+```
+
+После произвести установку необходимых пакетов 
+
+```bash
+$ yum install -y ncurses-devel make gcc bc bison flex elfutils-libelf-devel openssl-devel grub2
+```
+
+## Скачивание исходных файлов ядра Linux
+
+Загрузите в директорию "/usr/scr/" исходный код ядра Linux версии 4.17 
+
+```bash
+$ cd /usr/src/ && wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.17.11.tar.xz
+```
+
+Извлеките файлы из скачанного архива используя следующие команду
+
+```bash
+$ tar -xvf linux-4.17.11.tar.xz
+```
+
+После перейдите в директорию куда были извлечены файлы
+
+```bash
+$ cd linux-4.17.11/
+```
+
+## Настройка параметров ядра Linux 
+
+Перед компиляцией необходимо установить правильные параметры ядра, иначе оно просто не будет работать. 
+
+Оптимальным вариантом будет воспользоваться готовым конфигурационным файлом, который находиться в директории "/boot"
+
+```bash
+$ cp -v /boot/config-3.10.0-693.5.2.el7.x86_64 /usr/src/linux-4.17.11/.config
+```
+
+Чтобы запустить программу для управления параметрами ядра Linux достаточно выполнить следующую команду:
+
+```bash
+$ make menucfg
+```
+
+Внимательно ознакомьтесь с данным инструментом и установите какой-нибудь параметр, но прежде выясните за что он отвечает в ядре.
+
+## Компиляция ядра Linux
+
+Для компиляции ядра необходимо выполнить следующие команды:
+
+```bash
+$ make bzImage
+$ make modules
+$ make
+$ make install
+$ make modules_install
+```
+
+Процесс компиляции может занять несколько часов. После завершения компиляции перезагрузите систему и проверьте версию установленного ядра 
+
+```bash
+$ uname -sr
+```
 
 
 
