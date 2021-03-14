@@ -31,13 +31,14 @@ $ vagrant ssh
 В начале необходимо обновить репозитории пакетов программного обеспечения:
 
 ```bash
-$ yum update
+$ sudo yum update
+$ sudo yum makecache
 ```
 
 После произвести установку необходимых пакетов 
 
 ```bash
-$ yum install -y ncurses-devel make gcc bc bison flex elfutils-libelf-devel openssl-devel grub2
+$ sudo yum install -y ncurses-devel make gcc bc bison flex elfutils-libelf-devel openssl-devel grub2 wget rpm-build
 ```
 
 ## Скачивание исходных файлов ядра Linux
@@ -45,19 +46,19 @@ $ yum install -y ncurses-devel make gcc bc bison flex elfutils-libelf-devel open
 Загрузите в директорию "/usr/scr/" исходный код ядра Linux версии 4.17 
 
 ```bash
-$ cd /usr/src/ && wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.17.11.tar.xz
+$ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.10.tar.xz
 ```
 
 Извлеките файлы из скачанного архива используя следующие команду
 
 ```bash
-$ tar -xvf linux-4.17.11.tar.xz
+$ tar -xvf linux-4.14.10.tar.xz
 ```
 
 После перейдите в директорию куда были извлечены файлы
 
 ```bash
-$ cd linux-4.17.11/
+$ cd linux-4.14.10/
 ```
 
 ## Настройка параметров ядра Linux 
@@ -67,32 +68,34 @@ $ cd linux-4.17.11/
 Оптимальным вариантом будет воспользоваться готовым конфигурационным файлом, который находиться в директории "/boot"
 
 ```bash
-$ cp -v /boot/config-3.10.0-693.5.2.el7.x86_64 /usr/src/linux-4.17.11/.config
+$ sudo cp -v /boot/config-$(uname -r) ~/linux-4.14.10/.config
 ```
 
 Чтобы запустить программу для управления параметрами ядра Linux достаточно выполнить следующую команду:
 
 ```bash
-$ make menucfg
+$ sudo make menuconfig
 ```
 
-Внимательно ознакомьтесь с данным инструментом и установите какой-нибудь параметр, но прежде выясните за что он отвечает в ядре.
+Внимательно ознакомьтесь с данным инструментом и установите какой-нибудь параметр, но прежде выясните за что он отвечает в ядре. 
+
+По завершении выберите с помощью клавишь стрелок пункт меню "Save" и нажмите два раза клавишу "Enter". 
+
+Выход из конфигуратора  осуществялеться с помощью пункта меню "Exit".
 
 ## Компиляция ядра Linux
 
 Для компиляции ядра необходимо выполнить следующие команды:
 
 ```bash
-$ make bzImage
-$ make modules
-$ make
-$ make install
-$ make modules_install
+$ make rpm-pkg
+$ sudo rpm -iUv ~/rpmbuild/RPMS/x86_64/*.rpm
 ```
 
-Процесс компиляции может занять несколько часов. После завершения компиляции перезагрузите систему и проверьте версию установленного ядра 
+Процесс компиляции может занять несколько часов. После завершения компиляции перезагрузите систему и проверьте версию установленного ядра.
 
 ```bash
+$ reboot
 $ uname -sr
 ```
 
