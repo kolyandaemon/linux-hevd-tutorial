@@ -17,10 +17,15 @@
 
 ## Лабораторная работа №0
 
-* [Linux Kernel](laboratornaya-rabota-0/untitled/README.md)
-  * [Справочная информация](laboratornaya-rabota-0/untitled/spravochnaya-informaciya.md)
-  * [Рекомендуемая литература](laboratornaya-rabota-0/untitled/rekomenduemaya-literatura.md)
-  * [Задание](laboratornaya-rabota-0/untitled/zadanie.md)
+* [Vagrant](laboratornaya-rabota-0/vagrant/README.md)
+  * [Требования](laboratornaya-rabota-0/vagrant/trebovaniya.md)
+  * [Быстрый старт](laboratornaya-rabota-0/vagrant/quick-start.md)
+  * [Vagrantfile](laboratornaya-rabota-0/vagrant/vagrantfile.md)
+  * [Команды Vagrant](laboratornaya-rabota-0/vagrant/vagrant-commands.md)
+* [Linux Kernel](laboratornaya-rabota-0/kernel-build/README.md)
+  * [Справочная информация](laboratornaya-rabota-0/kernel-build/spravochnaya-informaciya.md)
+  * [Рекомендуемая литература](laboratornaya-rabota-0/kernel-build/rekomenduemaya-literatura.md)
+  * [Задание](laboratornaya-rabota-0/kernel-build/zadanie.md)
 
 ## Лабораторная работа №1
 
