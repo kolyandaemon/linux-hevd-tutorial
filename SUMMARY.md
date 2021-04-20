@@ -18,17 +18,22 @@
 ## Лабораторная работа №0
 
 * [Vagrant](laboratornaya-rabota-0/vagrant/README.md)
-  * [Требования](laboratornaya-rabota-0/vagrant/trebovaniya.md)
-  * [Быстрый старт](laboratornaya-rabota-0/vagrant/quick-start.md)
-  * [Vagrantfile](laboratornaya-rabota-0/vagrant/vagrantfile.md)
-  * [Команды Vagrant](laboratornaya-rabota-0/vagrant/vagrant-commands.md)
-* [Linux Kernel](laboratornaya-rabota-0/kernel-build/README.md)
-  * [Справочная информация](laboratornaya-rabota-0/kernel-build/spravochnaya-informaciya.md)
-  * [Рекомендуемая литература](laboratornaya-rabota-0/kernel-build/rekomenduemaya-literatura.md)
-  * [Задание](laboratornaya-rabota-0/kernel-build/zadanie.md)
+  * [Справочная информация](laboratornaya-rabota-0/vagrant/spravochnaya-informaciya.md)
+  * [Рекомендуемая литература](laboratornaya-rabota-0/vagrant/rekomenduemaya-literatura.md)
+  * [Задание](laboratornaya-rabota-0/vagrant/zadanie/README.md)
+    * [Быстрый старт](laboratornaya-rabota-0/vagrant/zadanie/quick-start.md)
+    * [Vagrantfile](laboratornaya-rabota-0/vagrant/zadanie/vagrantfile.md)
+    * [Команды Vagrant](laboratornaya-rabota-0/vagrant/zadanie/vagrant-commands.md)
 
 ## Лабораторная работа №1
 
+* [Linux Kernel](laboratornaya-rabota-1/kernel-build/README.md)
+  * [Справочная информация](laboratornaya-rabota-1/kernel-build/spravochnaya-informaciya.md)
+  * [Рекомендуемая литература](laboratornaya-rabota-1/kernel-build/rekomenduemaya-literatura.md)
+  * [Задание](laboratornaya-rabota-1/kernel-build/zadanie/README.md)
+    * [Настройка виртуального окружения](laboratornaya-rabota-1/kernel-build/zadanie/nastroika-virtualnogo-okruzheniya.md)
+    * [Сборка ядра](laboratornaya-rabota-1/kernel-build/zadanie/sborka-yadra.md)
+    * [Сборка загружаемого модуля](laboratornaya-rabota-1/kernel-build/zadanie/sborka-zagruzhaemogo-modulya.md)
 * [Buffer Overflow Stack](laboratornaya-rabota-1/buffer-overflow-stack/README.md)
   * [Справочная информация](laboratornaya-rabota-1/buffer-overflow-stack/spravochnaya-informaciya.md)
   * [Рекомендуемая литература](laboratornaya-rabota-1/buffer-overflow-stack/rekomenduemaya-literatura.md)
