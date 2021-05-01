@@ -31,16 +31,15 @@
   * [Справочная информация](laboratornaya-rabota-1/kernel-build/spravochnaya-informaciya.md)
   * [Рекомендуемая литература](laboratornaya-rabota-1/kernel-build/rekomenduemaya-literatura.md)
   * [Задание](laboratornaya-rabota-1/kernel-build/zadanie/README.md)
-    * [Настройка виртуального окружения](laboratornaya-rabota-1/kernel-build/zadanie/nastroika-virtualnogo-okruzheniya.md)
     * [Сборка ядра](laboratornaya-rabota-1/kernel-build/zadanie/sborka-yadra.md)
     * [Сборка загружаемого модуля](laboratornaya-rabota-1/kernel-build/zadanie/sborka-zagruzhaemogo-modulya.md)
-* [Buffer Overflow Stack](laboratornaya-rabota-1/buffer-overflow-stack/README.md)
-  * [Справочная информация](laboratornaya-rabota-1/buffer-overflow-stack/spravochnaya-informaciya.md)
-  * [Рекомендуемая литература](laboratornaya-rabota-1/buffer-overflow-stack/rekomenduemaya-literatura.md)
-  * [Задание](laboratornaya-rabota-1/buffer-overflow-stack/zadanie.md)
 
 ## Лабораторная работа №2
 
+* [Buffer Overflow Stack](laboratornaya-rabota-2/buffer-overflow-stack/README.md)
+  * [Справочная информация](laboratornaya-rabota-2/buffer-overflow-stack/spravochnaya-informaciya.md)
+  * [Рекомендуемая литература](laboratornaya-rabota-2/buffer-overflow-stack/rekomenduemaya-literatura.md)
+  * [Задание](laboratornaya-rabota-2/buffer-overflow-stack/zadanie.md)
 * [Arbitrary Write](laboratornaya-rabota-2/arbitrary-write/README.md)
   * [Справочная информация](laboratornaya-rabota-2/arbitrary-write/spravochnaya-informaciya.md)
   * [Рекомендуемая литература](laboratornaya-rabota-2/arbitrary-write/rekomenduemaya-literatura.md)
