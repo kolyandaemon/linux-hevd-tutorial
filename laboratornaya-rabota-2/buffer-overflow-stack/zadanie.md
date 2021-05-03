@@ -23,7 +23,7 @@ $ vagrant up
 ```text
 $ vagrant ssh
 $ cd linux-hevd
-$ sudo sh compile_and_insmod.sh
+$ sh compile_and_insmod.sh
 ```
 
 Сразу после выполнения команд процесс сборки и установки виртуального окружения можно считать завершенным.
