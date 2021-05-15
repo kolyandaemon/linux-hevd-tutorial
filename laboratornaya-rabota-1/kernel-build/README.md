@@ -14,7 +14,3 @@
 
 Уметь работать в терминале Linux
 
-## Требуемый образ
-
-VagrantBox: kolyanwinboy/kernel\_build/centos
-
