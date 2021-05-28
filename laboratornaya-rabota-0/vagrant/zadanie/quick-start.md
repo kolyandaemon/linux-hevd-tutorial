@@ -2,7 +2,7 @@
 
 Перед инициализацией виртуального окружения необходимо выбрать образ виртуальной машины. Просмотреть список доступных образов можно по данной ссылке: [https://app.vagrantup.com/boxes/search?provider=virtualbox](https://app.vagrantup.com/boxes/search?provider=virtualbox). 
 
-После необходимо выполнить команду: 
+После необходимо выполнить команду в терминале: 
 
 ```text
 $ vagrant init username/boxname
