@@ -44,14 +44,3 @@ sudo apt upgrade
 sudo apt install vagrant
 ```
 
-###  Windows Subsystem for Linux 2\(Ubuntu 20.04\)
-
-Установка Vagrant в WLS 2 такая же как и в Dedian, но требует дополнительных манипуляций после выполнения соответствующих команд. Необходимо в конец файла с именем ".bashrc", который находиться в домашней директории, добавить следующие строчки:  
-
-```text
-export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
-export PATH="$PATH:/mnt/c/Program Files/Oracle/VirtualBox"
-```
-
-Первая строчка включает включает функцию использования Vagrant в  WSL 2. Вторая позволяет Vagrant узнать путь куда установлено программное обеспечение VirtualBox.
-
