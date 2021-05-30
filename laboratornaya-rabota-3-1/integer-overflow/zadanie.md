@@ -32,5 +32,21 @@ $ sh compile_and_insmod.sh
 
 {% embed url="https://www.youtube.com/watch?v=gnDlMtZOlak&ab\_channel=KolyanDaemon" caption="Видеоинструкция " %}
 
+## Изучение уязвимости 
+
+Задание данной лабораторной работы состоит из нескольких этапов
+
+### 1 этап 
+
+С учетом приобретенных навыков в второй лабораторной работе необходимо отключить следующие средства защиты: KASLR, SMEP, SMAP и stack canary. Это нужно для облегчения понимания функционирования уязвимости в ядре. 
+
+### 2 этап
+
+Далее необходимо собрать модуль ядра, установить его. Сделать это можно с помощью инструкции выше.  Также рекомендуется изучить исходные файлы функции, демонстрирующую уязвимость:   [IntegerOverflow.c](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/IntegerOverflow.c),  [IntegerOverflow.h](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/IntegerOverflow.h),  [Common.h](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/Common.h),  [integer\_overflow.py](https://github.com/kolyandaemon/linux-hevd/blob/master/exploit/integer_overflow.py),  [hevd.py](https://github.com/kolyandaemon/linux-hevd/blob/master/exploit/hevd.py).
+
+### 3 этап 
+
+Необходимо выполнить системный вызов функции, демонстрирующую уязвимость CWE-190: Integer Overflow при разных условиях: с выключенными механизмами защиты, с включенными механизмами защиты. Также необходимо подобрать такой размер входных данных при которых в журнале отладки ядра\(команда `dmesg`\) появиться сообщении об успешном детектировании уязвимости. 
+
 
 

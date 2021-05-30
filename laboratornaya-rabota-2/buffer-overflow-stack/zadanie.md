@@ -42,7 +42,7 @@ $ sh compile_and_insmod.sh
 
 ### 2 этап
 
-Далее необходимо собрать модуль ядра, установить его. Сделать это можно с помощью инструкции выше.  Также рекомендуется изучить исходные файлы функции, демонстрирующую уязвимость:  .
+Далее необходимо собрать модуль ядра, установить его. Сделать это можно с помощью инструкции выше.  Также рекомендуется изучить исходные файлы функции, демонстрирующую уязвимость: [buffer\_overflow-stack.py](https://github.com/kolyandaemon/linux-hevd/blob/master/exploit/buffer_overflow-stack.py),  [hevd.py](https://github.com/kolyandaemon/linux-hevd/blob/master/exploit/hevd.py),  [Common.h](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/Common.h),  [BufferOverflowStack.c](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/BufferOverflowStack.c),  [BufferOverflowStack.h](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/BufferOverflowStack.h).
 
 ### 3 этап 
 
