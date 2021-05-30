@@ -37,7 +37,8 @@
 ## Лабораторная работа №2
 
 * [Buffer Overflow Stack](laboratornaya-rabota-2/buffer-overflow-stack/README.md)
-  * [Справочная информация](laboratornaya-rabota-2/buffer-overflow-stack/spravochnaya-informaciya.md)
+  * [Справочная информация](laboratornaya-rabota-2/buffer-overflow-stack/spravochnaya-informaciya/README.md)
+    * [Механизмы защиты](laboratornaya-rabota-2/buffer-overflow-stack/spravochnaya-informaciya/mekhanizmy-zashity.md)
   * [Рекомендуемая литература](laboratornaya-rabota-2/buffer-overflow-stack/rekomenduemaya-literatura.md)
   * [Задание](laboratornaya-rabota-2/buffer-overflow-stack/zadanie.md)
 
