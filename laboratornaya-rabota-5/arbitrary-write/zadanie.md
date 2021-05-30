@@ -32,5 +32,17 @@ $ sh compile_and_insmod.sh
 
 {% embed url="https://www.youtube.com/watch?v=gnDlMtZOlak&ab\_channel=KolyanDaemon" caption="Видеоинструкция " %}
 
+### 1 этап 
+
+С учетом приобретенных навыков в второй лабораторной работе необходимо отключить следующие средства защиты: KASLR, SMEP, SMAP и stack canary. Это нужно для облегчения понимания функционирования уязвимости в ядре. 
+
+### 2 этап
+
+Далее необходимо собрать модуль ядра, установить его. Сделать это можно с помощью инструкции выше.  Также рекомендуется изучить исходные файлы функции, демонстрирующую уязвимость:     [ArbitraryWrite.c](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/ArbitraryWrite.c),  [ArbitraryWrite.h](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/ArbitraryWrite.h)  [Common.h](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/Common.h),  [hevd.py](https://github.com/kolyandaemon/linux-hevd/blob/master/exploit/hevd.py),  [arbitrary\_write.py](https://github.com/kolyandaemon/linux-hevd/blob/master/exploit/arbitrary_write.py)
+
+### 3 этап 
+
+Необходимо выполнить системный вызов функции, демонстрирующую уязвимость CWE-457: Use of Uninitialized Variable при разных условиях: с выключенными механизмами защиты и с включенными механизмами защиты. Поскольку функция осуществляет запись входных данных напрямую в память необходимо не допустить состояния "Kernel Panic" при вызове системного вызова.
+
 
 
