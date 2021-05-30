@@ -32,5 +32,17 @@ $ sh compile_and_insmod.sh
 
 {% embed url="https://www.youtube.com/watch?v=gnDlMtZOlak&ab\_channel=KolyanDaemon" caption="Видеоинструкция " %}
 
+Задание данной лабораторной работы состоит из нескольких этапов
 
+### 1 этап 
+
+С учетом приобретенных навыков в второй лабораторной работе необходимо отключить следующие средства защиты: KASLR, SMEP, SMAP и stack canary. Это нужно для облегчения понимания функционирования уязвимости в ядре. 
+
+### 2 этап
+
+Далее необходимо собрать модуль ядра, установить его. Сделать это можно с помощью инструкции выше.  Также рекомендуется изучить исходные файлы функции, демонстрирующую уязвимость:    [UninitializedMemoryStack.c](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/UninitializedMemoryStack.c)**,**  [UninitializedMemoryStack.h](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/UninitializedMemoryStack.h),  [Common.h](https://github.com/kolyandaemon/linux-hevd/blob/master/sources/HEVD/Linux/Common.h),  [hevd.py](https://github.com/kolyandaemon/linux-hevd/blob/master/exploit/hevd.py),  [uninitialized\_memory\_stack.py](https://github.com/kolyandaemon/linux-hevd/blob/master/exploit/uninitialized_memory_stack.py).
+
+### 3 этап 
+
+Необходимо выполнить системный вызов функции, демонстрирующую уязвимость CWE-457: Use of Uninitialized Variable при разных условиях: с выключенными механизмами защиты, с включенными механизмами защиты. Также необходимо подобрать такой размер входных данных при которых в журнале отладки ядра\(команда `dmesg`\) появиться следующее сообщение "\[+\] Uninitialized Memory Stack Object Callback\n".
 
