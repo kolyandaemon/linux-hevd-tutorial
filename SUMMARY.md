@@ -6,14 +6,12 @@
 
 ## Лабораторный стенд
 
----
-
-* [Технические требования](tech-req.md)
-* [Руководство по установке и настройке](rukovodstvo-po-ustanovke-i-nastroike/README.md)
-  * [Включение аппаратной виртуализации](rukovodstvo-po-ustanovke-i-nastroike/vklyuchenie-apparatnoi-virtualizacii.md)
-  * [Установка VirtualBox](rukovodstvo-po-ustanovke-i-nastroike/ustanovka-virtualbox.md)
-  * [Установка Vagrant](rukovodstvo-po-ustanovke-i-nastroike/ustanovka-vagrant.md)
-  * [Установка ОС Debian 10.6.0](rukovodstvo-po-ustanovke-i-nastroike/ustanovka-os-debian-10.6.0.md)
+* [Руководство по установке и настройке](laboratornyi-stend/rukovodstvo-po-ustanovke-i-nastroike/README.md)
+  * [Включение аппаратной виртуализации](laboratornyi-stend/rukovodstvo-po-ustanovke-i-nastroike/vklyuchenie-apparatnoi-virtualizacii.md)
+  * [Установка VirtualBox](laboratornyi-stend/rukovodstvo-po-ustanovke-i-nastroike/ustanovka-virtualbox.md)
+  * [Установка Vagrant](laboratornyi-stend/rukovodstvo-po-ustanovke-i-nastroike/ustanovka-vagrant.md)
+  * [Установка ОС Debian 10.6.0](laboratornyi-stend/rukovodstvo-po-ustanovke-i-nastroike/ustanovka-os-debian-10.6.0.md)
+* [Технические требования](laboratornyi-stend/tech-req.md)
 
 ## Лабораторная работа №0
 
@@ -42,30 +40,26 @@
   * [Рекомендуемая литература](laboratornaya-rabota-2/buffer-overflow-stack/rekomenduemaya-literatura.md)
   * [Задание](laboratornaya-rabota-2/buffer-overflow-stack/zadanie.md)
 
-## Лабораторная работа №3
+## Лабораторная работа №3 <a id="laboratornaya-rabota-3-1"></a>
 
----
+* [Integer Overflow](laboratornaya-rabota-3-1/integer-overflow/README.md)
+  * [Справочная информация](laboratornaya-rabota-3-1/integer-overflow/spravochnaya-informaciya.md)
+  * [Рекомендуемая литература](laboratornaya-rabota-3-1/integer-overflow/rekomenduemaya-literatura.md)
+  * [Задание](laboratornaya-rabota-3-1/integer-overflow/zadanie.md)
 
-* [Arbitrary Write](arbitrary-write/README.md)
-  * [Справочная информация](arbitrary-write/spravochnaya-informaciya.md)
-  * [Рекомендуемая литература](arbitrary-write/rekomenduemaya-literatura.md)
-  * [Задание](arbitrary-write/zadanie.md)
+## ЛАБОРАТОРНАЯ РАБОТА  №4 <a id="laboratornaya-rabota-4-1"></a>
 
-## Лабораторная работа №4
+* [Uninitialized Memory Stack](laboratornaya-rabota-4-1/uninitialized-memory-stack/README.md)
+  * [Справочная инофрмация](laboratornaya-rabota-4-1/uninitialized-memory-stack/spravochnaya-inofrmaciya.md)
+  * [Рекомендуемая литература](laboratornaya-rabota-4-1/uninitialized-memory-stack/rekomenduemaya-literatura.md)
+  * [Задание](laboratornaya-rabota-4-1/uninitialized-memory-stack/zadanie.md)
 
----
+## Лабораторная работа №5
 
-* [Integer Overflow](integer-overflow/README.md)
-  * [Справочная информация](integer-overflow/spravochnaya-informaciya.md)
-  * [Рекомендуемая литература](integer-overflow/rekomenduemaya-literatura.md)
-  * [Задание](integer-overflow/zadanie.md)
-
-## ЛАБОРАТОРНАЯ РАБОТА  №5
-
-* [Uninitialized Memory Stack](laboratornaya-rabota-5/uninitialized-memory-stack/README.md)
-  * [Справочная инофрмация](laboratornaya-rabota-5/uninitialized-memory-stack/spravochnaya-inofrmaciya.md)
-  * [Рекомендуемая литература](laboratornaya-rabota-5/uninitialized-memory-stack/rekomenduemaya-literatura.md)
-  * [Задание](laboratornaya-rabota-5/uninitialized-memory-stack/zadanie.md)
+* [Arbitrary Write](laboratornaya-rabota-5/arbitrary-write/README.md)
+  * [Справочная информация](laboratornaya-rabota-5/arbitrary-write/spravochnaya-informaciya.md)
+  * [Рекомендуемая литература](laboratornaya-rabota-5/arbitrary-write/rekomenduemaya-literatura.md)
+  * [Задание](laboratornaya-rabota-5/arbitrary-write/zadanie.md)
 
 ---
 
